@@ -87,33 +87,33 @@ _**DRAFT**_
 ## Usage
 To easily share and consume local underground music that is otherwise not readily avaiable in a central location.
 ## Mock-Up
-**Flow chart**
+**Flow chart**<br>
 <img src="./images/mockup_flowchart.png">
 
-**Color palette**
+**Color palette**<br>
 <img src="./images/mockup_color-palette.png">
 
-**Index** where users must login (or sign up) to open the application
+**Index** where users must login (or sign up) to open the application<br>
 <img src="./images/mockup_index.png">
 
-**Homepage** where users can view all songs that have been uploaded
+**Homepage** where users can view all songs that have been uploaded<br>
 <img src="./images/mockup_homepage.png">
 
-**Upload new songs** where artists can published newly released songs
-<img src="./images/mockup_add-new.png">
+**Upload new songs** where artists can published newly released songs<br>
+<img src="./images/mockup_add-new-version-B.png">
 
 ## Deployed Application
-Live url: TBD
+Live url: TBD <br>
 Repo url: https://github.com/cpm-128/local-music-scene
 
 ### Screencapture
-**Index** where users must login (or sign up) to open the application
+**Index** where users must login (or sign up) to open the application<br>
 <img src="">
 
-**Homepage** where users can view all songs that have been uploaded
+**Homepage** where users can view all songs that have been uploaded<br>
 <img src="">
 
-**Upload new songs** where artists can published newly released songs
+**Upload new songs** where artists can published newly released songs<br>
 <img src="">
 
 ## Contributors
