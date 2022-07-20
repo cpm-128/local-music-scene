@@ -26,9 +26,10 @@ Post.init(
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		// album_name allows false value. Independent artists are likely to release songs and demos without an assigned album
+		// album_name allows null value. Independent artists are likely to release songs and demos without an assigned album
 		album_name: {
 			type: DataTypes.STRING,
+      allowNull: true,
 		},
 		poster_id: {
 			type: DataTypes.INTEGER,
