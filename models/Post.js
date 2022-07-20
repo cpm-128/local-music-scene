@@ -30,11 +30,11 @@ Post.init(
 		album_name: {
 			type: DataTypes.STRING,
 		},
-		poster_user_name: {
+		poster_id: {
 			type: DataTypes.INTEGER,
 			references: {
 				model: 'user',
-				key: 'user_name',
+				key: 'id',
 			},
 		},
 	},
@@ -45,3 +45,5 @@ Post.init(
 		modelName: 'post',
 	}
 );
+
+module.exports = Post
