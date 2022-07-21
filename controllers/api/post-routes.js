@@ -53,3 +53,23 @@ router.post('/', (req, res) => {
 });
 
 // DELETE single post
+router.delete('/:id', (req, res) => {
+    Post.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbDeletePostData => {
+        if (!dbDeletePostData) {
+            res.status(404).json({ message: 'No post found with this id.' });
+            return;
+        }
+        res.json(dbDeletePostData);
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+module.exports = router;
