@@ -9,3 +9,5 @@ router.use('/api', apiRoutes);
 module.exports = router;
 
 // home routes included but commented out until that file is built
+
+//TODO: uncomment out homeRoutes once that file is written
