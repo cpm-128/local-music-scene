@@ -36,3 +36,20 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
     });
 });
+
+// CREATE /api/posts
+router.post('/', (req, res) => {
+    Post.create({
+        song_title: req.body.song_title,
+        song_url: req.body.song_url,
+        artist_name: req.body.artist_name,
+        album_name: req.body.album_name
+    })
+    .then(dbCreatePostData => res.json(dbCreatePostData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+// DELETE single post
