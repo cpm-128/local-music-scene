@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-image {
+    background-image: url("../images/on-stage.jpg");
+    background-color: #587b88;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+}
+
+section.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
