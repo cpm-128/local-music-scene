@@ -11,7 +11,7 @@ const sequelize = require('../../config/config');
 // DELETE single post
 // ====
 
-// GET all posts with poster_id /api/posts
+// GET all posts with user_id /api/posts
 router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
@@ -43,7 +43,8 @@ router.post('/', (req, res) => {
         song_title: req.body.song_title,
         song_url: req.body.song_url,
         artist_name: req.body.artist_name,
-        album_name: req.body.album_name
+        album_name: req.body.album_name,
+        user_id: req.body.user_id
     })
     .then(dbCreatePostData => res.json(dbCreatePostData))
     .catch(err => {
