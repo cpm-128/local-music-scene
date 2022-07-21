@@ -29,9 +29,9 @@ Post.init(
 		// album_name allows null value. Independent artists are likely to release songs and demos without an assigned album
 		album_name: {
 			type: DataTypes.STRING,
-      allowNull: true,
+      		allowNull: true,
 		},
-		poster_id: {
+		user_id: {
 			type: DataTypes.INTEGER,
 			references: {
 				model: 'user',
