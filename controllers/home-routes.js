@@ -1,7 +1,6 @@
 // client facing routes
 
 const router = require('express').Router();
-const { Module } = require('module');
 const sequelize = require('../config/config');
 const { Post, User } = require('../models');
 
@@ -54,6 +53,14 @@ router.get('/home', (req, res) => {
     });
 });
 
-
+router.get('/add', (req, res) => {
+    // check for a session and redirect to / if one does not exists
+    if (!req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    //TODO: CONFIRM THIS IS THE VIEW TO RENDER ONCE WRITTEN
+    res.render('add');
+});
 
 module.exports = router;
