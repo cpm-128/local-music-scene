@@ -7,7 +7,7 @@ const { Post, User } = require('../models');
 router.get('/', (req, res) => {
     // check for a session and redirect to /home if one exists
     if (req.session.loggedIn) {
-        res.redirect('/');
+        res.redirect('/home');
         return;
     }
     //TODO: CONFIRM THIS IS THE VIEW TO RENDER ONCE WRITTEN
@@ -16,10 +16,10 @@ router.get('/', (req, res) => {
 
 router.get('/home', (req, res) => {
     // check for a session and redirect to / if one does not exists
-    // if (!req.session.loggedIn) {
-    //     res.redirect('/');
-    //     return;
-    // }
+    if (!req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
 
     // get all posts to display
     Post.findAll({
@@ -55,10 +55,10 @@ router.get('/home', (req, res) => {
 
 router.get('/add', (req, res) => {
     // check for a session and redirect to / if one does not exists
-    // if (!req.session.loggedIn) {
-    //     res.redirect('/');
-    //     return;
-    // }
+    if (!req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
     //TODO: CONFIRM THIS IS THE VIEW TO RENDER ONCE WRITTEN
     res.render('add');
 });
