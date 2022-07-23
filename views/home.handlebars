@@ -3,6 +3,15 @@
   <div class="row px-3">
     <button class="submit-button col-12 col-md-6 btn btn-info mx-auto my-4">Submit a new song</button>
   </div>
+  <ol class="song-list">
+  {{#each song}}
+  <li>
+    <div class="song-card">
+      <div class="title">{{song_title}}</div>
+    </div>
+  </li>
+  {{/each}}
+</ol>
 </div>
 
 <script src="/javascript/navigate-to-add.js"></script>
