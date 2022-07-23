@@ -41,6 +41,10 @@ h2, h3 {
   font-family: Bebas Neue;
 }
 
+ol li {
+  list-style-type: none;
+}
+
 .hero-image {
   background-color: #587b88;
   background-image: url("../images/on-stage.jpg");
@@ -97,11 +101,6 @@ h2, h3 {
   color: #EEFEB3;
 }
 
-/* .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: #253F75;
-  background-color: #EEFEB3;
-} */
-
 .btn-secondary {
   background-color: white;
   border: 1px solid #253F75;
@@ -112,4 +111,41 @@ h2, h3 {
   font-size: 18px;
   line-height: 22px;
   color: #587b88;
+}
+
+.song-card {
+  background: rgba(88, 123, 136, 0.08);
+  border: 1px solid rgba(37, 63, 117, 0.49);
+  border-radius: 4px;
+  margin-bottom: 18px;
+  padding: 18px;
+}
+
+.song-title {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #253F75;
+}
+
+.song-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #587B88;
+  margin-bottom: 18px;
+}
+
+.song-info {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #587B88;
+  margin-top: 9px;
 }
