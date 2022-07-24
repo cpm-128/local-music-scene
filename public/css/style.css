@@ -149,3 +149,13 @@ ol li {
   color: #587B88;
   margin-top: 9px;
 }
+
+.song-info-username {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #587B88;
+  margin-top: 9px;
+}
