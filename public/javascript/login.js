@@ -50,5 +50,7 @@ async function loginFormHandler(e) {
 	}
 }
 
+
+
 document.querySelector('.create-account-form').addEventListener('submit', signupFormHandler);
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);

@@ -11,9 +11,10 @@
 				<div class='song-card'>
 					<div class='song-title'>{{song_title}}</div>
           <hr>
-          <a href="{{song_url}}" class="song-link">{{song_url}}</a>
-          <div class="song-info">{{artist_name}}</div>
-          <div class="song-info">{{album_name}}</div>
+          <a href="{{song_url}}" class="song-link"><i class="col-1 pl-0 fa-solid fa-link"></i>{{song_url}}</a>
+          <div class="song-info"><i class="col-1 pl-0 fa-solid fa-microphone-lines"></i>Artist:   {{artist_name}}</div>
+          <div class="song-info"><i class="col-1 pl-0 fa-solid fa-compact-disc"></i>Album:   {{album_name}}</div>
+          <hr>
           <div class="song-info-username">Added by: {{user.username}}</div>
 				</div>
 			</li>
