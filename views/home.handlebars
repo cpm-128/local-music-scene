@@ -19,7 +19,19 @@
 			</li>
 		{{/each}}
 	</ol>
+  <div class="row"><button class="btn btn-info elevator-button mx-auto mb-3">Back to Top</button></div>
 </div>
+
+<script src="/javascript/elevator.js"></script>
+<script>
+// Elevator script included on the page, already.
+window.onload = function() {
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    duration: 1000 // milliseconds
+  });
+}
+</script>
 
 <script src='/javascript/navigate-to-add.js'></script>
 <script src='/javascript/logout.js'></script>
