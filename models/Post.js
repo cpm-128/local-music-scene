@@ -29,7 +29,7 @@ Post.init(
 		// album_name allows null value. Independent artists are likely to release songs and demos without an assigned album
 		album_name: {
 			type: DataTypes.STRING,
-      		allowNull: true,
+			allowNull: true,
 		},
 		user_id: {
 			type: DataTypes.INTEGER,
@@ -38,6 +38,13 @@ Post.init(
 				key: 'id',
 			},
 		},
+		// user_name: {
+    //   type: DataTypes.STRING,
+		// 	references: {
+		// 		model: 'user',
+		// 		key: 'username',
+		// 	},
+		// },
 	},
 	{
 		sequelize,
@@ -47,4 +54,4 @@ Post.init(
 	}
 );
 
-module.exports = Post
+module.exports = Post;
