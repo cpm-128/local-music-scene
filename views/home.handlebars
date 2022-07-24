@@ -1,0 +1,22 @@
+<div class='container'>
+	<header class='col-12 justify-content-around'>Local Music Scene</header>
+	<div class='row px-3'>
+		<button class='submit-button col-12 col-md-6 btn btn-info mx-auto my-4'>Submit a new song</button>
+	</div>
+	<ol class='song-list col-lg-6 mx-auto'>
+		{{#each posts}}
+			<li>
+				<div class='song-card'>
+					<div class='song-title'>{{song_title}}</div>
+          <hr>
+          <a href="{{song_url}}" class="song-link">{{song_url}}</a>
+          <div class="song-info">{{artist_name}}</div>
+          <div class="song-info">{{album_name}}</div>
+          <div class="song-info">{{username}}</div>
+				</div>
+			</li>
+		{{/each}}
+	</ol>
+</div>
+
+<script src='/javascript/navigate-to-add.js'></script>

@@ -7,7 +7,7 @@ const { Post, User } = require('../models');
 router.get('/', (req, res) => {
     // check for a session and redirect to /home if one exists
     if (req.session.loggedIn) {
-        res.redirect('/');
+        res.redirect('/home');
         return;
     }
     //TODO: CONFIRM THIS IS THE VIEW TO RENDER ONCE WRITTEN
