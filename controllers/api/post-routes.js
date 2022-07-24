@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
         song_url: req.body.song_url,
         artist_name: req.body.artist_name,
         album_name: req.body.album_name,
-        user_id: req.body.user_id
+        user_name: req.session.user_name
     })
     .then(dbCreatePostData => res.json(dbCreatePostData))
     .catch(err => {
