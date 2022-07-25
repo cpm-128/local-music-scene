@@ -103,7 +103,7 @@ To easily share and consume local underground music that is otherwise not readil
 <img src="./images/mockup_add-new-version-B.png">
 
 ## Deployed Application
-Live url: TBD <br>
+Live url: https://damp-plateau-16490.herokuapp.com <br>
 Repo url: https://github.com/cpm-128/local-music-scene
 
 ### Screencapture
