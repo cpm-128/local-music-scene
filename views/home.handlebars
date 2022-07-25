@@ -31,7 +31,8 @@
 window.onload = function() {
   var elevator = new Elevator({
     element: document.querySelector('.elevator-button'),
-    duration: 1000 // milliseconds
+    mainAudio: '/src/elevator.mp3',
+    endAudio: '/src/ding.mp3'
   });
 }
 </script>
