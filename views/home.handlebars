@@ -1,5 +1,7 @@
 <div class='container'>
-	<header class='col-12 justify-content-around'>Local Music Scene</header>
+	<header class='col-12 justify-content-around'>
+    <div class="logo-logout">LOCAL MUSIC SCENE</div>
+  </header>
 	<div class='row px-3'>
 		<button class='submit-button col-12 col-md-6 btn btn-info mx-auto my-4'>Submit a new song</button>
 	</div>
@@ -9,14 +11,30 @@
 				<div class='song-card'>
 					<div class='song-title'>{{song_title}}</div>
           <hr>
-          <a href="{{song_url}}" class="song-link">{{song_url}}</a>
-          <div class="song-info">{{artist_name}}</div>
-          <div class="song-info">{{album_name}}</div>
-          <div class="song-info">{{username}}</div>
+          <a href="{{song_url}}" class="song-link"><i class="col-1 pl-0 fa-solid fa-link"></i>{{song_url}}</a>
+          <div class="song-info"><i class="col-1 pl-0 fa-solid fa-microphone-lines"></i>Artist:   {{artist_name}}</div>
+          <div class="song-info"><i class="col-1 pl-0 fa-solid fa-compact-disc"></i>Album:   {{album_name}}</div>
+          <hr>
+          <div class="song-info-username">Added by: {{user.username}}</div>
 				</div>
 			</li>
 		{{/each}}
 	</ol>
+  <div class="row">
+    <button class="btn btn-info elevator-button mx-auto mb-3">Back to Top  <i class="fa-solid fa-circle-up"></i></button>
+  </div>
 </div>
 
+<script src="/javascript/elevator.js"></script>
+<script>
+// Elevator script included on the page, already.
+window.onload = function() {
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    duration: 1000 // milliseconds
+  });
+}
+</script>
+
 <script src='/javascript/navigate-to-add.js'></script>
+<script src='/javascript/logout.js'></script>
