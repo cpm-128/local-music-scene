@@ -17,9 +17,15 @@ async function signupFormHandler(e) {
 
 		// check the response status
 		if (response.ok) {
-			console.log('success, user created');
-		} else {
-			alert(response.statusText);
+			fetch('/api/users/login', {
+				method: 'post',
+				body: JSON.stringify({
+					username,
+					password,
+				}),
+				headers: { 'Content-Type': 'application/json' },
+			});
+			document.location.replace('/');
 		}
 	}
 }
@@ -49,8 +55,6 @@ async function loginFormHandler(e) {
 		}
 	}
 }
-
-
 
 document.querySelector('.create-account-form').addEventListener('submit', signupFormHandler);
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
