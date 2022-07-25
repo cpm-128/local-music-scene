@@ -34,6 +34,9 @@ router.get('/home', (req, res) => {
                 model: User,
                 attributes: ['username']
             }
+        ],
+        order: [
+            ['created_at', 'DESC']
         ]
     })
     .then(dbAllPostsData => {
