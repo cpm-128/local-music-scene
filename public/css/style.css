@@ -113,6 +113,9 @@ ol li {
   color: #587b88;
 }
 
+.container-fluid {
+  padding: 0;
+}
 .song-card {
   background: rgba(88, 123, 136, 0.08);
   border: 1px solid rgba(37, 63, 117, 0.49);
