@@ -29,54 +29,53 @@ SO THAT the music can still be enjoyed by locals without having to go to a live 
 - <a href="contributors">Contributors</a>
 - <a href="#license">License</a>
 
-
 ## Acceptance Criteria for MVP
 _**DRAFT**_
 GIVEN a CMS-style music sharing site . . .
 
-WHEN I visit the site for the first time
+WHEN I visit the site for the first time<br>
 THEN I am required to choose one of two options in order to access the application:
   - login
   - sign up
 
-WHEN I choose to sign up
+WHEN I choose to sign up<br>
 THEN I am prompted to create a username and password
 
-WHEN I click on the sign-up button
+WHEN I click on the sign-up button<br>
 THEN my user credentials are saved and I am logged into the site
 
-WHEN I revisit the site at a later time and choose to sign in
+WHEN I revisit the site at a later time and choose to sign in<br>
 THEN I am prompted to enter my username and password
 
-WHEN I visit the application after logging in
+WHEN I visit the application after logging in<br>
 THEN I am presented with a homepage which includes all songs that have been shared to the site and a sticky button to add a new song
 
-WHEN I get to the bottom of the homepage
+WHEN I get to the bottom of the homepage<br>
 THEN there is a button to take an elevator back to the top of the page
 
-WHEN I am on the homepage
+WHEN I am on the homepage<br>
 THEN I am presented with existing songs that have been published that include the song title, URL to listen, the artist, and the alubum
 
-WHEN I am viewing published songs on the homepage
+WHEN I am viewing published songs on the homepage<br>
 THEN they are displayed in order of most recently added
 
-WHEN I click on the button to add a new song
+WHEN I click on the button to add a new song<br>
 THEN I am prompted to enter a title, URL where the song can be listened to, the artist, and the alubm
 
-WHEN I click on the button to submit a new song
+WHEN I click on the button to submit a new song<br>
 THEN the song information is saved and I am taken back to an updated dashboard with the new song at the top
 
-WHEN I click the link to listen to the song
+WHEN I click the link to listen to the song<br>
 THEN it opens in a new browser window
 
-WHEN I am idle on the site for more than a set time
+WHEN I am idle on the site for more than a set time<br>
 THEN I am prompted to log in again before I can view or publish songs
 
 ### Features for Iteration 2.0
-_**DRAFT**_
 - Sound storage: upload and play sound files directly from the site
 - Filter by location to keep the application truly local
 - Favorite songs and access a list of these
+- Combine user creation and user login forms
 
 ## Installation
 - Clone the directly from the GitHub repository to your local machine.
@@ -103,23 +102,27 @@ To easily share and consume local underground music that is otherwise not readil
 <img src="./images/mockup_add-new-version-B.png">
 
 ## Deployed Application
-Live url: https://damp-plateau-16490.herokuapp.com <br>
+Live url: https://damp-plateau-16490.herokuapp.com/ <br>
 Repo url: https://github.com/cpm-128/local-music-scene
 
 ### Screencapture
-**Index** where users must login (or sign up) to open the application<br>
-<img src="">
+**Index - Desktop** where users must login (or sign up) to open the application<br>
+<img src="./images/deployed_index-desktop.png">
+
+**Index - Mobile** where users must login (or sign up) to open the application<br>
+<img src="./images/deployed_index-mobile.png">
 
 **Homepage** where users can view all songs that have been uploaded<br>
-<img src="">
+<img src="./images/deployed_homepage.png">
 
 **Upload new songs** where artists can published newly released songs<br>
-<img src="">
+<img src="./images/deployed_add-new.png">
 
 ## Contributors
 - <a href="https://github.com/mlmcgeenc">Matt McGee</a>
 - <a href="https://github.com/awartani321">Adam Awartani</a>
 - <a href="https://github.com/dashley2">Ashley Darr</a>
+- <a href="https://github.com/cpm-128">Colleen Maher</a>
 
 ## License
 MIT License
