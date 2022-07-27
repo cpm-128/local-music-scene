@@ -17,17 +17,16 @@ form {
 }
 
 header {
-  height: 72px;
   background: #587B88;
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 43px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: #EEFEB3;
+  padding: 18px;
 }
 
 h1 {
@@ -43,6 +42,21 @@ h2, h3 {
 
 ol li {
   list-style-type: none;
+}
+
+.badge-logout {
+  background: #EEFEB3;
+  border: 1px solid #253F75;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 9px;
+  color: #587B88;
+}
+
+.badge-logout:hover {
+  cursor: pointer;
 }
 
 .hero-image {
@@ -116,6 +130,7 @@ ol li {
 .container-fluid {
   padding: 0;
 }
+
 .song-card {
   background: rgba(88, 123, 136, 0.08);
   border: 1px solid rgba(37, 63, 117, 0.49);
