@@ -11,4 +11,4 @@ async function logout() {
 	}
 }
 
-document.querySelector('.logo-logout').addEventListener('click', logout);
+document.querySelector('.badge-logout').addEventListener('click', logout);
